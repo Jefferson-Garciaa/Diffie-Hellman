@@ -37,6 +37,23 @@ Após estabelecidas as chaves, são feitos os primeiros cálculos, a ideia neste
 Após ambos obterem suas chaves parciais, elas são enviadas, ou seja, o server recebe a chave parcial do client e vice-versa.
 
 
+Agora o último passo para obter a chave completa é a seguinte equação:
+
+![Image](https://github.com/Jefferson-Garciaa/Diffie-Hellman/blob/main/Page/imagens/imagem3.png?raw=true)
+
+Necessariamente o mesmo resultado deve ser obtido, pois ele será usado para criptografar a mensagem e sem ele a mensagem não pode ser descriptografada corretamente, exemplos serão mostrados ao final do relatório.
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
