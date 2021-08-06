@@ -1,0 +1,45 @@
+Aguardando conexão do Cliente
+Conectado em ('127.0.0.1', 61324)
+
+
+CHAVE PÚBLICA RECEBIDA :  696
+GERANDO ALEATORIAMENTE CHAVE PRIVADA DO SERVIDOR
+VALOR DA CHAVE PRIVADA DO SERVIDOR :  286
+CHAVE PÚBLICA MOD RECEBIDA : 714
+CIANDO A CHAVE PARCIAL
+CHAVE PARCIAL GERADA :  18
+RECEBENDO A CHAVE PARCIAL DO CLIENTE
+CHAVE PARCIAL RECEBIDA DO CLIENTE :  696
+ENVIANDO A CHAVE PARCIAL DO SERVIDOR PARA O CLIENTE
+GERANDO CHAVE COMPLETA
+VALOR DA CHAVE COMPLETA:  18
+
+
+RECEBENDO PRIMEIRA MENSAGEM CRIPTOGRAFADA
+MENSAGEM APÓS DESCRIPTOGRAFIA USANDO A CHAVE =  b'Porque Deus tanto amou o mundo'
+
+
+RECEBENDO SEGUNDA MENSAGEM CRIPTOGRAFADA
+MENSAGEM APÓS DESCRIPTOGRAFIA USANDO A CHAVE =  b'que deu o seu Filho Unigenito'
+
+
+RECEBENDO TERCEIRA MENSAGEM CRIPTOGRAFADA
+MENSAGEM APÓS DESCRIPTOGRAFIA USANDO A CHAVE =  b'para que todo o que nEle crer'
+
+
+RECEBENDO QUARTA MENSAGEM CRIPTOGRAFADA
+MENSAGEM APÓS DESCRIPTOGRAFIA USANDO A CHAVE =  b'nao pereca, mas tenha a vida eterna.'
+
+
+USANDO UMA CHAVE ERRADA
+A CHAVE ERRADA SERÁ A CHAVE COMPLETA + 10
+RECEBENDO MENSAGEM CRIPTOGRAFADA
+
+Traceback (most recent call last):
+  File "server.py", line 94, in <module>
+    msgErrada = str(decrypt(str(ChaveErrada), ciphertext))
+  File "/home/jeff/.local/lib/python3.8/site-packages/simplecrypt/__init__.py", line 72, in decrypt
+    _assert_hmac(hmac_key, hmac, hmac2)
+  File "/home/jeff/.local/lib/python3.8/site-packages/simplecrypt/__init__.py", line 116, in _assert_hmac
+    raise DecryptionException('Bad password or corrupt / modified data.')
+simplecrypt.DecryptionException: Bad password or corrupt / modified data.
