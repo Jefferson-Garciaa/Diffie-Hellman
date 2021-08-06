@@ -4,10 +4,10 @@
 
 ### Códigos Fontes
 
-[Link](https://github.com/Jefferson-Garciaa/Diffie-Hellman/blob/main/Page/client.py.txt)
-[Link](https://github.com/Jefferson-Garciaa/Diffie-Hellman/blob/main/Page/server.py.txt)
-[Link](url)
-
+[Client.py](https://github.com/Jefferson-Garciaa/Diffie-Hellman/blob/main/Page/client.py.txt)
+[Server.py](https://github.com/Jefferson-Garciaa/Diffie-Hellman/blob/main/Page/server.py.txt)
+[Log Client](https://github.com/Jefferson-Garciaa/Diffie-Hellman/blob/main/Page/log_client.txt.txt)
+[Log Server](https://github.com/Jefferson-Garciaa/Diffie-Hellman/blob/main/Page/log_server.txt.txt)
 
 
 ![Image](https://github.com/Jefferson-Garciaa/Diffie-Hellman/blob/main/Page/imagens/imagem1.png?raw=true)
