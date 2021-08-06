@@ -11,6 +11,7 @@
 
 ### Relatório
 O trabalho consiste em 3 partes principais:
+
 1-	Estabelecer uma conexão socket entre servidor e cliente.
 2-	Fazer o passo a passo do algoritmo de Diffie-Hellman para obter a chave secreta.
 3-	Trabalhar toda a parte de criptografia usando a chave obtida.
@@ -25,6 +26,7 @@ A conexão foi uma etapa tranquila, sem complicações.
 Passando para o Diffie-Hellman, foi usado como referência a seguinte página: [https://medium.com/@sadatnazrul/diffie-hellman-key-exchange-explained-python-8d67c378701c](https://medium.com/@sadatnazrul/diffie-hellman-key-exchange-explained-python-8d67c378701c).
 
 É importante destacar que em um cenário real os números usados seriam diferentes em alguns aspectos: seriam números realmente grandes, da ordem de centenas de dígitos, a chave pública que é usada como mod deveria ser primo, ou um produto de primos, pela dificuldade de fatoração. Neste trabalho não levei em consideração esses fatores por não serem relevantes na ocasião.
+
 A execução começa com client.py gerando aleatoriamente as duas chaves públicas, uma servirá como base (na imagem abaixo é o 197) e outra servirá como módulo (151).  
 Client.py também gera aleatoriamente a sua chave privada (157). Client passa as chaves públicas para server.py, através da conexão secket, e mantém a chave privada somente para si, ao passo que server.py recebe as chaves e aleatoriamente gera uma chave privada, que também será mantida somente para si (199).
 
@@ -46,13 +48,18 @@ Necessariamente o mesmo resultado deve ser obtido, pois ele será usado para cri
 #### Criptografando as mensagens
 Uma vez que a chave completa foi obtida, as mensagens podem ser enviadas em segurança. Para isso usei uma biblioteca python chamada simplecrypt, é uma biblioteca simples que possui dois métodos: encrypt e decrypt.
 Encrypt recebe como parâmetro a chave completa e a mensagem que deve ser criptografada e retorna a mensagem devidamente criptografada. 
+
 Mensagem_cript = encrypt(chave, str_msg).
 
 Decrypt recebe a chave e a mensagem criptografada e retorna a mensagem original, caso a chave esteja de acorda com a usada em encrypt.
+
 Msg_original = decrypt(chave, Mensagem_cript).
+
 Se a chave usada em decrypt for diferente da chave da chave usada em encrypt, neste exemplo, a execução do código não termina e a seguinte mensagem de erro é exibida:
 
 ![Image](https://github.com/Jefferson-Garciaa/Diffie-Hellman/blob/main/Page/imagens/imagem4.png?raw=true)
+
+[Imagem da Mensagem de erro](https://github.com/Jefferson-Garciaa/Diffie-Hellman/blob/main/Page/imagens/imagem4.png?raw=true)
 
 Porém, provavelmente, se a execução continuasse a mensagem seria descriptografada de maneira errada, continuando ilegível.
 
