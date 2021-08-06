@@ -4,7 +4,7 @@
 
 ### Códigos Fontes
 
-[Link](url) and ![Image](Page/Imagens/imagem1.png)
+[Link](url) and ![Image](https://github.com/Jefferson-Garciaa/Diffie-Hellman/blob/main/Page/imagens/imagem1.png?raw=true)
 
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
