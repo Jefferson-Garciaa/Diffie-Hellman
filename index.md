@@ -9,6 +9,21 @@
 [Log Client](https://github.com/Jefferson-Garciaa/Diffie-Hellman/blob/main/Page/log_client.txt.txt) |
 [Log Server](https://github.com/Jefferson-Garciaa/Diffie-Hellman/blob/main/Page/log_server.txt.txt)
 
+### Relatório
+O trabalho consiste em 3 partes principais:
+1-	Estabelecer uma conexão socket entre servidor e cliente.
+2-	Fazer o passo a passo do algoritmo de Diffie-Hellman para obter a chave secreta.
+3-	Trabalhar toda a parte de criptografia usando a chave obtida.
+
+#### Estabelecendo conexão
+Primeiramente falarei sobre a conexão socket que foi estabelecida.
+Usando a biblioteca Python “socket” ficou fácil estabelecer a conexão em poucas linhas de código.
+Foi usado HOST = ‘localhost’ e PORT = 50000.
+A conexão foi uma etapa tranquila, sem complicações.
+
+#### Gerando as chaves
+Passando para o Diffie-Hellman, foi usado como referência a seguinte página: [https://medium.com/@sadatnazrul/diffie-hellman-key-exchange-explained-python-8d67c378701c](https://medium.com/@sadatnazrul/diffie-hellman-key-exchange-explained-python-8d67c378701c).
+
 
 ![Image](https://github.com/Jefferson-Garciaa/Diffie-Hellman/blob/main/Page/imagens/imagem1.png?raw=true)
 
