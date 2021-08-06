@@ -43,7 +43,21 @@ Agora o último passo para obter a chave completa é a seguinte equação:
 
 Necessariamente o mesmo resultado deve ser obtido, pois ele será usado para criptografar a mensagem e sem ele a mensagem não pode ser descriptografada corretamente, exemplos serão mostrados ao final do relatório.
 
+#### Criptografando as mensagens
+Uma vez que a chave completa foi obtida, as mensagens podem ser enviadas em segurança. Para isso usei uma biblioteca python chamada simplecrypt, é uma biblioteca simples que possui dois métodos: encrypt e decrypt.
+Encrypt recebe como parâmetro a chave completa e a mensagem que deve ser criptografada e retorna a mensagem devidamente criptografada. 
+Mensagem_cript = encrypt(chave, str_msg).
 
+Decrypt recebe a chave e a mensagem criptografada e retorna a mensagem original, caso a chave esteja de acorda com a usada em encrypt.
+Msg_original = decrypt(chave, Mensagem_cript).
+Se a chave usada em decrypt for diferente da chave da chave usada em encrypt, neste exemplo, a execução do código não termina e a seguinte mensagem de erro é exibida:
+
+![Image](https://github.com/Jefferson-Garciaa/Diffie-Hellman/blob/main/Page/imagens/imagem4.png?raw=true)
+
+Porém, provavelmente, se a execução continuasse a mensagem seria descriptografada de maneira errada, continuando ilegível.
+
+#### Considerações finais
+Foram feitos diversos testes, tanto para testar a troca de chaves, quanto para testar a troca de mensagens criptografadas, o comportamento foi bom. Nos logs têm exemplos de apenas 1 execução, tendo nesta execução 4 mensagens trocadas corretamente e 1 mensagem onde foi utilizada, propositalmente, a chave incorreta, para testar o comportamento. Como o log ficou um pouco grande, apenas uma execução ficou salva, porém basta rodar os códigos no terminal Linux e um novo log ficará detalhado na saída padrão.
 
 
 
