@@ -24,6 +24,10 @@ A conexão foi uma etapa tranquila, sem complicações.
 #### Gerando as chaves
 Passando para o Diffie-Hellman, foi usado como referência a seguinte página: [https://medium.com/@sadatnazrul/diffie-hellman-key-exchange-explained-python-8d67c378701c](https://medium.com/@sadatnazrul/diffie-hellman-key-exchange-explained-python-8d67c378701c).
 
+É importante destacar que em um cenário real os números usados seriam diferentes em alguns aspectos: seriam números realmente grandes, da ordem de centenas de dígitos, a chave pública que é usada como mod deveria ser primo, ou um produto de primos, pela dificuldade de fatoração. Neste trabalho não levei em consideração esses fatores por não serem relevantes na ocasião.
+A execução começa com client.py gerando aleatoriamente as duas chaves públicas, uma servirá como base (na imagem abaixo é o 197) e outra servirá como módulo (151).  
+
+Client.py também gera aleatoriamente a sua chave privada (157). Client passa as chaves públicas para server.py, através da conexão secket, e mantém a chave privada somente para si, ao passo que server.py recebe as chaves e aleatoriamente gera uma chave privada, que também será mantida somente para si (199).
 
 ![Image](https://github.com/Jefferson-Garciaa/Diffie-Hellman/blob/main/Page/imagens/imagem1.png?raw=true)
 
