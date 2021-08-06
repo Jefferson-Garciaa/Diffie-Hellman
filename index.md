@@ -4,9 +4,9 @@
 
 ### Códigos Fontes
 
-[Client.py](https://github.com/Jefferson-Garciaa/Diffie-Hellman/blob/main/Page/client.py.txt)
-[Server.py](https://github.com/Jefferson-Garciaa/Diffie-Hellman/blob/main/Page/server.py.txt)
-[Log Client](https://github.com/Jefferson-Garciaa/Diffie-Hellman/blob/main/Page/log_client.txt.txt)
+[Client.py](https://github.com/Jefferson-Garciaa/Diffie-Hellman/blob/main/Page/client.py.txt) |
+[Server.py](https://github.com/Jefferson-Garciaa/Diffie-Hellman/blob/main/Page/server.py.txt) |
+[Log Client](https://github.com/Jefferson-Garciaa/Diffie-Hellman/blob/main/Page/log_client.txt.txt) |
 [Log Server](https://github.com/Jefferson-Garciaa/Diffie-Hellman/blob/main/Page/log_server.txt.txt)
 
 
