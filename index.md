@@ -33,6 +33,7 @@ Client.py também gera aleatoriamente a sua chave privada (157). Client passa as
 Após estabelecidas as chaves, são feitos os primeiros cálculos, a ideia neste primeiro momento é gerar as respectivas chaves parciais. A equação é a seguinte:
 
 ![Image](https://github.com/Jefferson-Garciaa/Diffie-Hellman/blob/main/Page/imagens/imagem2.png?raw=true)
+
 Após ambos obterem suas chaves parciais, elas são enviadas, ou seja, o server recebe a chave parcial do client e vice-versa.
 
 
